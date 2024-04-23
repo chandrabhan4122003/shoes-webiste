@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.border{
+    border: 2px solid black;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FFF;
+    height: 33px;
+    width: 100%;
+}
+
+.heading p{
+    font-size: 12px;
+    margin: 0 10px 0 0;
+}
+
+.set-up{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+.nav-set-up{
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    width: 15%;
+}
+
+.nav-set-up p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-bar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+}
+
+.nav-bar h2{
+    font-family: "Geostar Fill", serif;
+}
+
+.dropdown-container{
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn { 
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.dropbtn:hover{
+    cursor: pointer;
+}
+
+#dropbtn{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.drop-content img {
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.me{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropbtn:hover{
+    border-bottom: 3px solid black;
+}
+
+#dropbtn:hover{
+    border-bottom: 3px solid red;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    background-color: #ECEFF1;
+    width: 8%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.search-bar .bar-style{
+    border: none;
+    background-color: #ECEFF1;
+    width: 50%;
+    padding: 5px;
+}
+
+.search-bar img{
+    width: 20px;
+    padding: 2px;
+}
+
+.cartbtn { 
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.cart-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.cart-content h1{
+    padding-left: 6rem;
+    padding-top: 6rem;
+}
+
+.cart:hover .cart-content{
+    display: block;
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 6rem;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    margin: 120px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.bodyTwo{
+    display: flex;
+    flex-direction: column;
+    margin: 120px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.bodyThree{
+    display: flex;
+    flex-direction: column;
+    margin: 120px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.head{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    width: 67%;
+}
+
+.product-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-images {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-slot{
+    display: flex;
+}
+
+.image-slot img{
+    width: 49.98%;
+    box-sizing: border-box;
+    border: 0.7px solid white;
+}
+
+.product-content{
+    position:  relative fixed;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-top: 1px solid #ECEFF1;
+}
+
+.the-content{
+    margin: 55px;
+}
+
+.the-content p{
+    font-size: 13px;
+}
+
+.colour-option{
+    margin-top: 30px;
+    height: 8rem;
+}
+
+.shoe-sizes{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 5px;
+}
+
+.btn{
+    width: 16rem;
+    height: 4rem;
+    background-color: #000000;
+}
+
+.btnKabtn{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    width: 16rem;
+    height: 4rem;
+    margin-top: -3.8rem;
+    margin-left: 3px;
+}
+
+.btnKabtn:hover{
+    color: #b5b5b6;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btnMain{
+    outline: none;
+    background-color: inherit;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btnMain:hover{
+    cursor: pointer;
+}
+
+.rest-content{
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.rest-content p{
+    font-size: 15px;
+    margin: 10px;
+}
+
+.rest-content p:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.advantages{
+    display: flex;
+    align-items: center;
+}
+
+.rohit-banner{
+    position: relative;
+}
+
+.rohit-banner img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.rohit-bannerContent{
+    color: #FFF;
+    position: absolute;
+    top: 333%;
+    left: 19%;
+    transform: translate(-50%,-50%);
+    height: 15rem;
+    width: 22rem;
+}
+
+.yeezy-bannerContent{
+    position: absolute;
+    top: 80%;
+    left: 9%;
+    height: 12rem;
+    width: 15rem;
+}
+
+.hold{
+    margin-top: 30px;
+}
+
+.container{
+    padding: 7rem;
+}
+
+.container h2{
+    font-size: 30px;
+}
+
+.container-content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 23px;
+}
+
+.container-content h1{
+    border-bottom: 2px solid black;
+    width: 22rem;
+    margin: 30px;
+    margin-left: 0;
+}
+
+.container-content h1:hover{
+    border-bottom: 8px solid black;
+}
+
+.end-content{
+    padding: 30px;
+    background-color: #F5F5E5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.end-content-content{
+    padding: 20px;
+    width: 45%;
+    font-size: 15px;
+}
+
+.foot-heading{
+    background-color: #EDE734;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+}
+
+.foot-display{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+
+.foot-display h3{
+    margin-bottom: 10px;
+}
+
+.foot-display li{
+    list-style: none;
+    font-size: 13px;
+    margin: 2px;
+}
+
+.foot-display li:hover{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.foot-end{
+    background-color: #282C31;
+    height: 7rem;
+}
+
+.foot-end p{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+}
+
+.login{
+    width: 40%;
+    padding: 3rem;
+    padding-left: 0;
+}
+
+.login h2{
+    font-size: 32px;
+}
+
+.login p{
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.form-group label{
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.check-condition:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.login-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+    padding-right: 0;
+}
+
+.login-benefits{
+    padding: 20px;
+    padding-left: 0px;
+}
+
+.login-benefits h1{
+    width: 50%;
+}
+
+.login-benefits p{
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    width: 80%;
+}
+
+.login-benefits li{
+    list-style: none;
+    padding: 0 10px 10px 10px;
+    font-weight: 300;
+}
+.login-benefits li:before {
+    content: '✓ ';
+}
+
+input[type='email']{
+    padding: 10px;
+    width: 90%;
+}
+
+.form-group{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.check-condition{
+    margin-left: 10px;
+    font-size: 9px;
+}
+
+input.check{
+    width: 30px;
+    height: 50px;
+}
+
+.supernova-rise{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.supernova-footer-content{
+    padding: 6rem 12rem 6rem 12rem;
+}
+
+.supernova-footer-content h1{
+    font-weight: 450;
+    margin: 14px 0 10px 0;
+}
+
+.supernova-footer-content h2{
+    font-weight: 400;
+    margin: 10px 0 10px  0;
+}
+
+.supernova-footer-content p{
+    font-size: 14px;
+    width: 90%;
+}
